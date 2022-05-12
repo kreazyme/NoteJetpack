@@ -1,8 +1,7 @@
 package com.midterm.mynotes.model
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
+import com.midterm.mynotes.Converters
 import java.util.*
 
 @Entity(tableName = "notes")
@@ -18,6 +17,6 @@ data class Notes(
     val Name: String,
 
     @ColumnInfo
-    val Datetime: Date
+    val Date: Date
 
 )

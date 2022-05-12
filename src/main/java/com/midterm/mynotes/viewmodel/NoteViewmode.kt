@@ -32,4 +32,27 @@ class NoteViewmode @Inject constructor(private val repository: NoteRepository) :
                 }
         }
     }
+
+    fun addnotes(notes: Notes)= viewModelScope.launch {
+        println("OK")
+        repository.addNotes(notes)
+    }
+
+    fun deleteAllnote() = viewModelScope.launch {
+        repository.deleteAllNotes()
+    }
+
+    fun getNotes()= viewModelScope.launch {
+        repository.getAllNotes()
+    }
+
+    fun updatenote(notes: Notes)= viewModelScope.launch {
+        repository.updateNotes(notes)
+    }
+
+    fun deletenotes(notes: Notes)= viewModelScope.launch {
+        repository.deleteNotes(notes)
+    }
+
+
 }

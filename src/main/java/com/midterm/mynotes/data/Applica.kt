@@ -1,4 +1,9 @@
 package com.midterm.mynotes.data
 
-class Applica {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class Applica :Application(){
+
 }
